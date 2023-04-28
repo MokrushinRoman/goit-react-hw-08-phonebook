@@ -1,3 +1,5 @@
+import { Routes } from 'react-router-dom';
+
 export const App = () => {
-  return 1;
+  return <Routes></Routes>;
 };
