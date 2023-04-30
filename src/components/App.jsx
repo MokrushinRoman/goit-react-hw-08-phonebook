@@ -1,11 +1,15 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Layout } from './Layout';
-import { PrivateRoute, RestrictedRoute, GlobalStyle } from 'components';
-import { AuthLogIn, AuthRegister, Phonebook, WelcomePage } from 'pages';
-import { useEffect } from 'react';
+import { lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { PrivateRoute, RestrictedRoute, GlobalStyle } from 'components';
+import { Layout } from './Layout';
 import { refresh } from 'redux/auth/operations';
 import { useAuth } from 'hooks/useAuth';
+import WelcomePage from 'pages/WelcomePage/WelcomePage';
+
+const AuthLogIn = lazy(() => import('../pages/AuthLogIn/AuthLogIn'));
+const AuthRegister = lazy(() => import('../pages/AuthRegister/AuthRegister'));
+const Phonebook = lazy(() => import('../pages/Phonebook/Phonebook'));
 
 export const App = () => {
   const dispatch = useDispatch();

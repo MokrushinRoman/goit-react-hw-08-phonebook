@@ -6,3 +6,4 @@ export * from './AppBar/AppBar';
 export * from './AuthNav/AuthNav';
 export * from './PhonebookForm/PhonebookForm';
 export * from './ContactList/ContactList';
+export * from './LoadingView/LoadingView';

@@ -1,6 +1,6 @@
 import { Message } from './WelcomePage.styled';
 
-export const WelcomePage = () => {
+const WelcomePage = () => {
   return (
     <Message>
       <h1>Welcome!</h1>
@@ -8,3 +8,5 @@ export const WelcomePage = () => {
     </Message>
   );
 };
+
+export default WelcomePage;

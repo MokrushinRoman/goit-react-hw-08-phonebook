@@ -7,10 +7,7 @@ export const AppBar = () => {
 
   return (
     <Header>
-      <div
-        className="container"
-        style={{ width: '100%', alignContent: 'flex-end', display: 'flex' }}
-      >
+      <div className="container">
         {isLoggedIn ? (
           <>
             <NavLink to="contacts">Contacts</NavLink> <UserMenu />

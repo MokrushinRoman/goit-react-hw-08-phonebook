@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { register } from 'redux/auth/operations';
 import { authErrorNotification } from 'helpers/errorNotification';
 
-export const AuthRegister = () => {
+const AuthRegister = () => {
   const [name, setName] = useState('');
   const [email, setMail] = useState('');
   const [password, setPassword] = useState('');
@@ -69,3 +69,5 @@ export const AuthRegister = () => {
     </Form>
   );
 };
+
+export default AuthRegister;

@@ -14,5 +14,12 @@ export const NavLink = styled(Link)`
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  padding: 5px 0;
+
+  & > div {
+    width: 100%;
+    display: flex;
+    align-content: flex-end;
+    border-bottom: 2px solid #333333;
+    padding: 5px 0;
+  }
 `;

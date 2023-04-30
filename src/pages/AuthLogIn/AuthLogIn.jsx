@@ -4,7 +4,7 @@ import { logIn } from 'redux/auth/operations';
 import { authErrorNotification } from 'helpers/errorNotification';
 import { Field, Form } from './AuthLogIn.styled';
 
-export const AuthLogIn = () => {
+const AuthLogIn = () => {
   const [email, setMail] = useState('');
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
@@ -60,3 +60,5 @@ export const AuthLogIn = () => {
     </Form>
   );
 };
+
+export default AuthLogIn;
