@@ -47,7 +47,7 @@ export const App = () => {
               path="contacts"
               element={<PrivateRoute component={<Phonebook />} />}
             />
-            <Route path="*" element={<Navigate to="login" replace={true} />} />
+            <Route path="*" element={<Navigate to="/" replace={true} />} />
           </Route>
         </Routes>
       )}
