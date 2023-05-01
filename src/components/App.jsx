@@ -24,7 +24,15 @@ export const App = () => {
       {!isRefreshing && (
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<WelcomePage />} />
+            <Route
+              index
+              element={
+                <RestrictedRoute
+                  component={<WelcomePage />}
+                  restrictTo="/contacts"
+                />
+              }
+            />
             <Route
               path="login"
               element={
